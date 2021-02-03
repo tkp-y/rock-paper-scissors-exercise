@@ -1,4 +1,7 @@
 
+import random
+
+
 print("Rock, Paper, Scissors, Shoot!")
 
 
@@ -9,22 +12,27 @@ print("-------------------")
 #asking user for an input
 
 
-x = input("Please choose either 'rock', 'paper', or 'scissors': ")
+user_choice = input("Please choose either 'rock', 'paper', or 'scissors': ")
 
-print(x)
+
 
 
 #string interpolation / format string usage
 #print(f"You chose: {x}")
 
 
-print("You chose: " + x)
-
-exit()
+print("You chose: " + user_choice)
 
 #simulating a computer input
 
-print("The computer chose: 'paper'")
+
+options = ["rock", "paper", "scissors"]
+
+computer_choice = random.choice(options)
+
+print("The computer chose: " + computer_choice)
+
+exit()
 
 #determining who won
 
