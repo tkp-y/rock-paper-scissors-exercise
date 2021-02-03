@@ -1,5 +1,6 @@
 
 import random
+#from random import choice
 
 
 print("Rock, Paper, Scissors, Shoot!")
@@ -29,14 +30,31 @@ print("You chose: " + user_choice)
 options = ["rock", "paper", "scissors"]
 
 computer_choice = random.choice(options)
+#computer_choice = choice(options)
 
 print("The computer chose: " + computer_choice)
 
-exit()
 
 #determining who won
 
 print("-------------------")
-print("Oh, the computer won. It's ok.")
+
+if computer_choice == user_choice:
+    print("You and the computer tied.")
+elif user_choice == "paper" and computer_choice == "rock":
+        print("You win! Congrats")
+elif user_choice == "paper" and computer_choice == "scissors":
+        print("Oh! The computer won, that's ok!")
+elif user_choice == "rock" and computer_choice == "paper":
+        print("Oh! The computer won, that's ok!")
+elif user_choice == "rock" and computer_choice == "scissors":
+        print("You win! Congrats")
+elif user_choice == "scissors" and computer_choice == "paper":
+        print("You win! Congrats")
+elif user_choice == "scissors" and computer_choice == "rock":
+        print("Oh! The computer won, that's ok!")
+
+
+
 print("-------------------")
 print("Thanks for playing. Please play again!")
