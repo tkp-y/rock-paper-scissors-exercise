@@ -21,7 +21,9 @@ user_choice = input("Please choose either 'rock', 'paper', or 'scissors': ")
 #stop the program (not try to determine the winnter)
 #... if user choice is invalid
 
-if user_choice.lower() in options:
+user_choice = user_choice.lower()
+
+if user_choice in options:
     pass
 else:
     print("Oops, please choose a valid option and try again.")
