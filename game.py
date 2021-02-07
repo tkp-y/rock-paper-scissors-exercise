@@ -1,13 +1,19 @@
-
+import os
 import random
 #from random import choice
+
+from dotenv import load_dotenv
+
+load_dotenv()
+
+PLAYER_NAME = os.getenv("PLAYER_NAME", default="Player One")
 
 
 print("Rock, Paper, Scissors, Shoot!")
 
 
 print("-------------------")
-print("Welcome 'Player One' to my Rock-Paper-Scissors game...")
+print("Welcome " + PLAYER_NAME + " to my Rock-Paper-Scissors game...")
 print("-------------------")
 
 #asking user for an input
@@ -25,6 +31,8 @@ user_choice = user_choice.lower()
 
 if user_choice in options:
     pass
+elif type(user_choice) == int:
+        print("Oops, you entered a number. Please choose a valid option and try again.")
 else:
     print("Oops, please choose a valid option and try again.")
     exit()
