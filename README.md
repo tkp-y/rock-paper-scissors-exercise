@@ -29,9 +29,9 @@ NOTE: if this command throws an error like "Could not open requirements file: [E
 
 Setup
 
-In the root directory of your local repository, update the contents of the ".env" file to specify your desired username:
+In the root directory of your local repository, create a new file called ".env", and update the contents of the ".env" file to specify your desired username:
 
-    USER_NAME="Enter Name Here"
+    PLAYER_NAME="John Snow"
 
 NOTE: the ".env" file is usually the place for passing configuration options and secret credentials, so as a best practice we don't upload this file to version control (which is accomplished via a corresponding entry in the .gitignore file)
 
