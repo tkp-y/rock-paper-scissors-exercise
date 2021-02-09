@@ -12,7 +12,7 @@ Pip
 
 Installation
 
-Navigate to the repository from the command line (subsequent commands assume you are running them from the local repository's root directory):
+Navigate to the repository from the command line (subsequent commands assume you are running them from the local repository's root directory) by using the following command:
 
     cd rock-paper-scissors-exercise
 
@@ -25,15 +25,11 @@ From inside the virtual environment, install package dependencies:
 
     pip install -r requirements.txt
 
-NOTE: if this command throws an error like "Could not open requirements file: [Errno 2] No such file or directory", make sure you are running it from the repository's root directory, where the requirements.txt file exists (see the initial cd step above)
-
 Setup
 
-In the root directory of your local repository, create a new file called ".env", and update the contents of the ".env" file to specify your desired username:
+In the root directory of your local repository, create a new file called ".env", and update the contents of the ".env" file to specify your desired username and to change the default player's name of Player One (replace "John Snow" with the desired player's name):
 
     PLAYER_NAME="John Snow"
-
-NOTE: the ".env" file is usually the place for passing configuration options and secret credentials, so as a best practice we don't upload this file to version control (which is accomplished via a corresponding entry in the .gitignore file)
 
 Usage
 
@@ -41,3 +37,4 @@ Run the game script:
 
     python game.py
 
+(Adapted from from Professor Rossetti's markdown)
