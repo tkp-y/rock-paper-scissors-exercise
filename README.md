@@ -16,6 +16,8 @@ Navigate to the repository from the command line (subsequent commands assume you
 
     cd rock-paper-scissors-exercise
 
+(Use cd ~/Desktop/rock-paper-scissors-exercise if the repository is stored in the desktop)
+
 Use Anaconda to create and activate a new virtual environment, perhaps called "my-env":
 
     conda create -n my-env python=3.8
